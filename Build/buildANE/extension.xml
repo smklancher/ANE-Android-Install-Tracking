@@ -1,0 +1,13 @@
+<extension xmlns="http://ns.adobe.com/air/extension/16.0">
+  <id>com.stephenklancher.installtracking</id>
+  <versionNumber>1</versionNumber>
+  <platforms>
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>AndroidReferrer.jar</nativeLibrary>
+        <initializer>com.stephenklancher.installtracking.AndroidReferrer</initializer>
+        <finalizer>com.stephenklancher.installtracking.AndroidReferrer</finalizer>
+      </applicationDeployment>
+    </platform>
+  </platforms>
+</extension>
