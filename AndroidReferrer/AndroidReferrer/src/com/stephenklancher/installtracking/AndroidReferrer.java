@@ -18,7 +18,7 @@ public class AndroidReferrer implements FREExtension {
     
 	private FREContext theContext;
 	
-	/* (non-Javadoc)
+	/** (non-Javadoc)
 	 * @see com.adobe.fre.FREExtension#createContext(java.lang.String)
 	 */
 	@Override
