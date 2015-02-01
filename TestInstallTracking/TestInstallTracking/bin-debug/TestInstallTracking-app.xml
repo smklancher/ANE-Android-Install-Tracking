@@ -15,7 +15,7 @@
 
 	<!-- A universally unique application identifier. Must be unique across all AIR applications.
 	Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
-	<id>TestInstallTracking</id>
+	<id>TestInstallTracking.debug</id>
 
 	<!-- Used as the filename for the application. Required. -->
 	<filename>TestInstallTracking</filename>
@@ -291,7 +291,7 @@
 			    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
 			    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
 			    
-			    <application android:enabled="true" android:debuggable="false">
+			    <application android:enabled="true" android:debuggable="true">
 			    <receiver
             android:name="com.stephenklancher.installtracking.ReferrerReceiver"
             android:exported="true"
@@ -317,8 +317,7 @@
 		]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
-    
-<extensions>
+    <extensions>
         <extensionID>com.stephenklancher.installtracking</extensionID>
     </extensions>
 </application>
