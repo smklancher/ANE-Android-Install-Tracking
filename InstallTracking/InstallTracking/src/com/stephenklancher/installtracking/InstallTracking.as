@@ -20,9 +20,15 @@ package com.stephenklancher.installtracking
 			}
 		}
 		
+		/**
+		 * Returns install-time referrer, or empty string if not supported for current platform
+		 */
 		public function getReferrer():String {
 			trace("Calling getReferrer");
-			var referrer:String=String (extContext.call("getReferrer"));
+			var referrer:String;
+			if (!extContext) {
+				referrer=String (extContext.call("getReferrer"));
+			}
 			return referrer;
 		}
 	}
