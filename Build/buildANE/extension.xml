@@ -8,6 +8,16 @@
         <initializer>com.stephenklancher.installtracking.AndroidReferrer</initializer>
         <finalizer>com.stephenklancher.installtracking.AndroidReferrer</finalizer>
       </applicationDeployment>
-    </platform>
+    </platform> 
+    <platform name="Android-x86">
+      <applicationDeployment>
+        <nativeLibrary>AndroidReferrer.jar</nativeLibrary>
+        <initializer>com.stephenklancher.installtracking.AndroidReferrer</initializer>
+        <finalizer>com.stephenklancher.installtracking.AndroidReferrer</finalizer>
+      </applicationDeployment>
+    </platform> 
+	<platform name="default"> 
+		<applicationDeployment/> 
+	</platform> 
   </platforms>
 </extension>

@@ -293,15 +293,12 @@
 			    
 			    <application android:enabled="true" android:debuggable="false">
 			    <receiver
-            android:name="com.stephenklancher.installtracking.ReferrerReceiver"
-            android:exported="true"
-            >
-
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER" />
-            </intent-filter>
-
-        </receiver>
+		            android:name="com.stephenklancher.installtracking.ReferrerReceiver"
+		            android:exported="true">
+		            <intent-filter>
+		                <action android:name="com.android.vending.INSTALL_REFERRER" />
+		            </intent-filter>
+		        </receiver>
 				</application>
 			</manifest>
 			
