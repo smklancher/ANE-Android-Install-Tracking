@@ -25,8 +25,8 @@ package com.stephenklancher.installtracking
 		 */
 		public function getReferrer():String {
 			trace("Calling getReferrer");
-			var referrer:String;
-			if (!extContext) {
+			var referrer:String="";
+			if (extContext) {
 				referrer=String (extContext.call("getReferrer"));
 			}
 			return referrer;
